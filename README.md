@@ -38,7 +38,7 @@ most probably have same system dependency packages names, on other distros satis
 
 **1.** Clone repo:
 ```console
-foo@bar:~$ git clone --recursive https://github.com/OpenHisiIpCam/br-firmware --depth 1
+foo@bar:~$ git clone --recursive https://github.com/OpenHisiIpCam/br-hisicam --depth 1
 ```
 
 **2.** Install required system packages:
@@ -146,7 +146,7 @@ hisilicon # setenv ipaddr 192.168.1.100; setenv netmask 255.255.255.0;  setenv s
 **2.** Download kernel and rootfs images from your host machine tftp server
 ```console
 hisilicon # tftp 0x82000000 uImage
-hisilicon # tftp 0x82400000 rootfs.squshfs
+hisilicon # tftp 0x82400000 rootfs.squashfs
 ```
 
 **3.** Setup kernel boot params.
